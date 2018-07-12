@@ -22,7 +22,7 @@
     highlight Comment gui=NONE term =NONE cterm=NONE guifg=#5b5b5b ctermfg=70
 
     " remove the white background of sign column
-    highlight SignColumn guibg=NONE ctermbg=NONE
+    highlight! SignColumn guibg=NONE ctermbg=NONE
 
     " modify line number to grey
     highlight LineNr term=bold cterm=NONE ctermfg=DarkGrey ctermbg=NONE gui=NONE guifg=DarkGrey guibg=NONE
@@ -30,6 +30,11 @@
     " Range:   233 (darkest) ~ 238 (lightest)
     " Default: 235
     let g:space_vim_dark_background = 234
+
+    highlight Pmenu ctermfg=141 ctermbg=236 guifg=#000000 guibg=#95f7cc
+    highlight PmenuSel ctermfg=251 ctermbg=97 guifg=#95f7cc guibg=#000000 gui=bold
+    highlight PmenuSbar ctermfg=28 ctermbg=233 guifg=#c269fe guibg=#2bff99
+    highlight PmenuThumb ctermfg=160 ctermbg=97 guifg=#e0211d guibg=#019955
 
 " }
 

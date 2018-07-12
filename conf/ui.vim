@@ -38,6 +38,7 @@
 
     highlight Normal guibg=#070707
     highlight Search term=reverse cterm=bold ctermfg=16 ctermbg=76 gui=bold guifg=#292b2e guibg=#f2fc5c
+
 " }
 
 
@@ -48,7 +49,7 @@
 
     "let g:airline_section_b = '%{getcwd()}'
     "let g:airline_section_c = '%F'
-    let g:airline_section_error = airline#section#create_right(['[AsyncRun]:%{g:asyncrun_status}'])
+    let g:airline_section_error = airline#section#create_right(['[Async]:%{g:asyncrun_status}'])
 
     if !exists('g:airline_symbols')
         let g:airline_symbols = {}

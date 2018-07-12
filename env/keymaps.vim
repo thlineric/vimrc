@@ -21,7 +21,7 @@
     "map <leader>sv :so $myvimrc<cr>
 
     " clear search highligh
-    noremap <silent><leader>nh :noh<cr>
+    noremap <silent><f2> :noh<cr>
 
     " copy current file path to system pasteboard
     map <silent><m-c> :let @* = expand("%")<cr>:echo "Copied: ".expand("%")<cr>

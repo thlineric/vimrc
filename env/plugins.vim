@@ -125,7 +125,7 @@
 
             Plug 'skywind3000/vim-preview'
             Plug 'ronakg/quickr-preview.vim'
-
+            "Plug 'yssl/QFEnter'
         endif
 
 

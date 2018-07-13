@@ -13,6 +13,9 @@
 " =====================================================================
 
 
+set nocompatible
+
+
 " --- configure encoding and default language {
 
     if has('multi_byte')

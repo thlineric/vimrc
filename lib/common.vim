@@ -22,8 +22,8 @@ endif
 
 
 
-function! common#get_script_list(dir, filter)
-    let script_list = map(glob(fnameescape(a:dir).'/{,.}*/', 1, 1), 'fnamemodify(v:val, a:filter)')
+function! common#get_script_list(dir)
+    let script_list = glob(fnameescape(a:dir).'/*.vim', 1, 1)
     return script_list
 endfunc
 

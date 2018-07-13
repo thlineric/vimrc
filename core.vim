@@ -131,7 +131,7 @@
     exec 'source' common_lib
 
     " loading lib script (private plugins)
-    let lib_list = common#get_script_list(g:lib, ':h')
+    let lib_list = common#get_script_list(g:lib)
     for lib_script in lib_list
         call common#load_script(lib_script)
     endfor

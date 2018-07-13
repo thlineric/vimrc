@@ -45,11 +45,24 @@
 " --- airline {
 
     let g:airline_theme ='powerlineish'
+    "let g:airline_theme ='badwolf'
     let g:airline_powerline_fonts = 1
 
-    "let g:airline_section_b = '%{getcwd()}'
-    "let g:airline_section_c = '%F'
-    let g:airline_section_error = airline#section#create_right(['[Async]:%{g:asyncrun_status}'])
+    function! ui#airline_asyncrun_status_disable()
+        let g:airline_section_c = airline#section#create_left([
+                                    \ g:airline_section_temp
+                                    \ ])
+        exec 'AirlineRefresh'
+    endfunc
+
+    function! ui#airline_asyncrun_status_enable()
+        let g:airline_section_temp = g:airline_section_c
+        let g:airline_section_c = airline#section#create_left([
+                                    \ '[AsyncRun]:%{g:asyncrun_status}',
+                                    \ g:airline_section_temp,
+                                    \ ])
+        exec 'AirlineRefresh'
+    endfunc
 
     if !exists('g:airline_symbols')
         let g:airline_symbols = {}

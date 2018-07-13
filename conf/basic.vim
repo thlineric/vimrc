@@ -41,6 +41,9 @@
     " provide notice when the mission is completed
     let g:asyncrun_bell = 1
 
+    autocmd User AsyncRunStart call ui#airline_asyncrun_status_enable()
+    autocmd User AsyncRunStop  call ui#airline_asyncrun_status_disable()
+
 " }
 
 

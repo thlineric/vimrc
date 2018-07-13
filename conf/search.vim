@@ -96,7 +96,7 @@
     let g:ctrlsf_search_mode      = 'async'
     let g:ctrlsf_ackprg           = 'rg'
     let g:ctrlsf_winsize          = '40%'
-    let g:ctrlsf_position         = 'left'
+    let g:ctrlsf_position         = 'right'
     let g:ctrlsf_debug_mode       = 0
     let g:ctrlsf_selected_line_hl = 'op'
 

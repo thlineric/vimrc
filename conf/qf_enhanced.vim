@@ -53,9 +53,9 @@
     " work around to fixed quickr-preview's bug {
 
         " fixed can't open file through the <enter> key
-        augroup vimrc
-            autocmd QuickFixCmdPost * exec 'botright copen'.' '.g:quickfix_height
-        augroup END
+        "augroup vimrc
+        "    autocmd QuickFixCmdPost * exec 'botright copen'.' '.g:quickfix_height
+        "augroup END
 
     " }
 

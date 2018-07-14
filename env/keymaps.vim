@@ -432,6 +432,12 @@
 
         " }
 
+        " FlyGrep {
+
+            nnoremap <leader>fg :FlyGrep<cr>
+
+        " }
+
     endif
 " }
 

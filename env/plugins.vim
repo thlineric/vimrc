@@ -143,6 +143,7 @@
 
             " global contents search
             Plug 'dyng/ctrlsf.vim'
+            Plug 'wsdjeg/FlyGrep.vim'
         endif
 
 

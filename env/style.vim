@@ -19,11 +19,16 @@ set laststatus=2
 " 总是显示行号
 set number
 
-"Toggle absolute numbering in VIM by insert mode 
-autocmd InsertEnter * set norelativenumber
-
-" Toggle relative numbering in VIM by normal mode 
-autocmd InsertLeave * set relativenumber
+let g:relative_number_enable = 0
+function! style#relative_number_toggle()
+    if !g:relative_number_enable
+        set relativenumber
+        let g:relative_number_enable = 1
+    else
+        set norelativenumber
+        let g:relative_number_enable = 0
+    endif
+endfunc
 
 " 总是显示侧边栏（用于显示 mark/gitdiff/诊断信息）
 set signcolumn=yes

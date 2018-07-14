@@ -26,6 +26,9 @@
     " close preview window
     noremap <silent><f10> :pclose<cr>
 
+    " toggle relative line number
+    noremap <silent><leader>rl :call style#relative_number_toggle()<cr>
+
     " copy current file path to system pasteboard
     map <silent><m-c> :let @* = expand("%")<cr>:echo "Copied: ".expand("%")<cr>
 

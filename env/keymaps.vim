@@ -287,6 +287,14 @@
 
         " }
 
+        " buffergator {
+
+            nnoremap <silent><leader>bt :BuffergatorToggle<CR>
+            "nnoremap <silent> <Leader>bo :BuffergatorOpen<CR>
+            "nnoremap <silent> <Leader>bc :BuffergatorClose<CR>
+
+        " }
+
     endif
 " }
 

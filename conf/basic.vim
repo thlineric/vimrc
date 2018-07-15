@@ -146,3 +146,16 @@
     "let g:indentLine_leadingSpaceChar = '.'
 
 " }
+
+
+
+" --- buffergator {
+
+    let g:buffergator_autoexpand_on_split = 0
+    let g:buffergator_viewport_split_policy = "t"
+    let g:buffergator_suppress_keymaps="1"
+    let g:buffergator_autodismiss_on_select=0
+    let g:buffergator_split_size=10
+    let g:buffergator_autoupdate=1
+
+" }

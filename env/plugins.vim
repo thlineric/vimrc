@@ -62,6 +62,7 @@
             Plug 'Yggdroot/indentLine'
 
             "Plug 'Yggdroot/hiPairs'
+            "Plug 'jeetsukumaran/vim-buffergator'
         endif
 
 

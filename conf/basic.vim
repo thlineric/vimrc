@@ -50,7 +50,7 @@
 " --- YankRing {
 
     let g:yankring_history_dir = g:copy_cache_dir
-
+    let g:yankring_window_height = 10
     " modify the file name of history
     let g:yankring_history_file = '.yankring_history'
 

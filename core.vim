@@ -116,6 +116,7 @@ set nocompatible
             \ 'source_control' : 0,
             \ 'textobj'        : 0,
             \ 'ui'             : 1,
+            \ 'tmux'           : 0,
         \ }
     endif
 

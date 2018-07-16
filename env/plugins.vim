@@ -197,6 +197,11 @@
             Plug 'ryanoasis/vim-devicons'
         endif
 
+        if has_key(g:bundle_group, 'tmux') && g:bundle_group['tmux']
+            Plug 'christoomey/vim-tmux-navigator'
+            Plug 'edkolev/tmuxline.vim'
+        endif
+
     call plug#end()
 
 " }

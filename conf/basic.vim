@@ -159,3 +159,11 @@
     let g:buffergator_autoupdate=1
 
 " }
+
+
+
+" --- diff-enhanced {
+
+
+
+" }

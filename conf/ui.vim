@@ -36,7 +36,12 @@
     highlight PmenuSbar ctermfg=28 ctermbg=233 guifg=#c269fe guibg=#2bff99
     highlight PmenuThumb ctermfg=160 ctermbg=97 guifg=#e0211d guibg=#019955
 
-    highlight Normal guibg=#070707
+    if WINDOWS()
+        highlight Normal guibg=#070707
+    else
+        highlight Normal guibg=NONE
+    endif
+
     highlight Search term=reverse cterm=bold ctermfg=16 ctermbg=76 gui=bold guifg=#292b2e guibg=#f2fc5c
 
 " }

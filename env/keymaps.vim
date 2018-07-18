@@ -24,7 +24,7 @@
     noremap <silent><f2> :noh<cr>
 
     " close preview window
-    noremap <silent><f10> :pclose<cr>
+    noremap <silent><f3> :pclose<cr>
 
     " toggle relative line number
     noremap <silent><leader>rl :call style#relative_number_toggle()<cr>

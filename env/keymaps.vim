@@ -398,6 +398,18 @@
 
         " }
 
+        " LeaderF-tjump {
+
+            noremap <leader>lj :LeaderfTjump <c-r><c-w><cr>
+
+        " }
+
+        " LeaderF-grep {
+
+            noremap <leader>lg :LeaderfGrepCword<cr>
+
+        " }
+
         " fzf {
 
             " fzf mappings
@@ -442,7 +454,7 @@
 
         " FlyGrep {
 
-            nnoremap <leader>fg :FlyGrep<cr>
+            "nnoremap <leader>fg :FlyGrep<cr>
 
             " <Esc>        close FlyGrep buffer
             " <C-c>        close FlyGrep buffer

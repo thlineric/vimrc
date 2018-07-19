@@ -64,6 +64,20 @@
 "  }
 
 
+" --- LeaderF-tjump {
+
+    " TBD
+
+" }
+
+
+" --- LeaderF-grep {
+
+    " TBD
+
+" }
+
+
 " --- fzf {
 
     " fzf drop down
@@ -109,7 +123,7 @@
 
 
 " --- FlyGrep {
-
-    let g:FlyGrep_search_tools = ['rg']
-
+"
+"    let g:FlyGrep_search_tools = ['rg']
+"
 "  }

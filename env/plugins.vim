@@ -134,6 +134,8 @@
         if has_key(g:bundle_group, 'search') && g:bundle_group['search']
             " file search
             Plug 'Yggdroot/LeaderF'
+            Plug 'xltan/LeaderF-tjump'
+            Plug 'bstaint/LeaderF-grep'
 
             if WINDOWS()
                 Plug 'junegunn/fzf'
@@ -145,7 +147,7 @@
 
             " global contents search
             Plug 'dyng/ctrlsf.vim'
-            Plug 'wsdjeg/FlyGrep.vim'
+            "Plug 'wsdjeg/FlyGrep.vim'
         endif
 
 

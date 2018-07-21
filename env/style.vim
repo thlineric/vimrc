@@ -57,8 +57,8 @@ set background=dark
 set t_Co=256
 
 " support true color in the terminal
-if (has("termguicolors")) 
-  set termguicolors 
+if (has("termguicolors"))
+  set termguicolors
 endif
 
 "----------------------------------------------------------------------

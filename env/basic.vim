@@ -105,7 +105,8 @@ set lazyredraw
 set errorformat+=[%f:%l]\ ->\ %m,[%f:%l]:%m
 
 " 设置分隔符可视
-set listchars=tab:\|\ ,trail:.,extends:>,precedes:<
+"set listchars=tab:\|\ ,trail:.,extends:>,precedes:<
+set listchars=tab:\⇄\ ,trail:•,extends:#,nbsp:.
 
 " 设置 tags：当前文件所在目录往上向根目录搜索直到碰到 .tags 文件
 " 或者 Vim 当前目录包含 .tags 文件

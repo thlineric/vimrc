@@ -73,7 +73,7 @@ set nocompatible
     let g:conf = printf('%s/conf', g:core)
 
     if !exists('g:bundle_root')
-        let g:bundle = '~/.vim/bundles'
+        let g:bundle_root = '~/.vim/bundles'
     endif
 
     " the variable will be ignored when you have not installed YankRing

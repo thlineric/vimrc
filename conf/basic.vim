@@ -148,7 +148,6 @@
 " }
 
 
-
 " --- buffergator {
 
     let g:buffergator_autoexpand_on_split = 0
@@ -161,9 +160,59 @@
 " }
 
 
-
 " --- diff-enhanced {
 
 
+
+" }
+
+
+" --- choosewin {
+
+    " if you want to use overlay feature
+    let g:choosewin_overlay_enable = 1
+
+    let g:choosewin_blink_on_land      = 0 " don't blink at land
+    let g:choosewin_statusline_replace = 0 " don't replace statusline
+    let g:choosewin_tabline_replace    = 0 " don't replace tabline
+
+    " right, center, left
+    "let g:choosewin_label_align = 'left'
+    "let g:choosewin_label_padding = 1
+
+    " let g:choosewin_color_label = {
+    "     \ 'gui': ['#f8fcb5', 'black', 'NONE'],
+    "     \ 'cterm': [22, 15]
+    " \ }
+
+    " let g:choosewin_color_label_current = {
+    "     \ 'gui': ['yellow', 'black', 'NONE'],
+    "     \ 'cterm': [40, 16]
+    " \ }
+
+    let g:choosewin_color_overlay = {
+        \ 'gui': ['#777777', '#777777'],
+        \ 'cterm': [22, 22]
+    \ }
+
+    let g:choosewin_color_overlay_current = {
+        \ 'gui': ['#c0fc32', '#c0fc32'],
+        \ 'cterm': [40, 40]
+    \ }
+
+    " let g:choosewin_color_other = {
+    "     \ 'gui': ['gray20', 'black'],
+    "     \ 'cterm': [240, 0]
+    " \ }
+
+    " let g:color_land = {
+    "     \ 'gui':[ 'LawnGreen', 'Black', 'bold, underline'],
+    "     \ 'cterm': ['magenta', 'white']
+    " \ }
+
+    " let g:color_shade = {
+    "     \ 'gui':[ '', '#777777'],
+    "     \ 'cterm': ['', 'grey']
+    " \ }
 
 " }

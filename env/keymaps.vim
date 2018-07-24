@@ -245,9 +245,9 @@
 
         " dirvish {
 
-            map<leader>t  :Dirvish %<cr>
-            map<leader>ht <plug>(dirvish_split_up) %<cr>
-            map<leader>vt <plug>(dirvish_vsplit_up) %<cr>
+            map <leader>t  :Dirvish %<cr>
+            map <leader>ht <plug>(dirvish_split_up) %<cr>
+            map <leader>vt <plug>(dirvish_vsplit_up) %<cr>
 
         " }
 
@@ -283,18 +283,30 @@
 
         " indentLine {
 
-            map<leader>il :IndentLinesToggle<cr>
+            map <leader>il :IndentLinesToggle<cr>
 
         " }
 
         " buffergator {
 
             nnoremap <silent><leader>bt :BuffergatorToggle<CR>
-            "nnoremap <silent> <Leader>bo :BuffergatorOpen<CR>
-            "nnoremap <silent> <Leader>bc :BuffergatorClose<CR>
+            "nnoremap <silent><Leader>bo :BuffergatorOpen<CR>
+            "nnoremap <silent><Leader>bc :BuffergatorClose<CR>
 
         " }
 
+        " diff-enhanced {
+
+            " TBD
+
+        " }
+
+
+        " choosewin {
+
+            nmap <silent><leader>ww  <Plug>(choosewin)
+
+        " }
     endif
 " }
 

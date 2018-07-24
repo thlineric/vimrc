@@ -64,6 +64,8 @@
             "Plug 'Yggdroot/hiPairs'
             Plug 'jeetsukumaran/vim-buffergator'
             Plug 'chrisbra/vim-diff-enhanced'
+
+            Plug 't9md/vim-choosewin'
         endif
 
 

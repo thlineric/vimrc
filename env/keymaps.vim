@@ -245,9 +245,9 @@
 
         " dirvish {
 
-            map <leader>t  :Dirvish %<cr>
-            map <leader>ht <plug>(dirvish_split_up) %<cr>
-            map <leader>vt <plug>(dirvish_vsplit_up) %<cr>
+            map <leader>t  :Dirvish<cr>
+            map <leader>ht <plug>(dirvish_split_up)<cr>
+            map <leader>vt <plug>(dirvish_vsplit_up)<cr>
 
         " }
 
@@ -304,7 +304,7 @@
 
         " choosewin {
 
-            nmap <silent><leader>ww  <Plug>(choosewin)
+            nmap <silent><leader>w <Plug>(choosewin)
 
         " }
     endif

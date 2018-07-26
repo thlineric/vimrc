@@ -385,6 +385,7 @@
             "autocmd FileType qf nnoremap <silent><buffer><m-l> :call qf_enhanced#quickfix_preview_enable()<cr>
             autocmd FileType qf nnoremap <silent><buffer>j <down>:PreviewQuickfix<cr>
             autocmd FileType qf nnoremap <silent><buffer>k <up>:PreviewQuickfix<cr>
+            autocmd FileType qf nnoremap <silent><buffer>o :pclose<cr> \| <cr>
 
         " }
 

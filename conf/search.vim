@@ -83,9 +83,10 @@
     " fzf drop down
     let g:fzf_layout         = { 'down': '~30%' }
     let $FZF_DEFAULT_COMMAND = 'rg --files --hidden --no-ignore'
+    let $FZF_DEFAULT_OPTS    = '--layout=reverse-list --border --inline-info'
     "let g:fzf_tags_command   = 'ctags --extra=+f -R'
 
-    " Customize fzf colors to match your color scheme
+    " "Customize fzf colors to match your color scheme
     " let g:fzf_colors = {
     "     \ "fg"      : ["fg", "Normal"],
     "     \ "bg"      : ["bg", "Normal"],
@@ -102,16 +103,52 @@
     "     \ "header"  : ["fg", "WildMenu"]
     " \ }
 
+    let g:rg_exact_command = '
+        \ rg --column --line-number --no-heading --fixed-strings --ignore-case --no-ignore --hidden --follow --color "always" --ansi
+        \ -g "*.{c,h,dec,dsc,fdf,vfr,hfv,sdl,sd,py,xml,asl,asli,tpl,bat,vim}"
+        \ -g "!{.git,node_modules,vendor,Build}/*"
+        \ '
+
+    command! -bang -nargs=* FERG
+        \ call fzf#vim#grep(
+        \   g:rg_exact_command . shellescape(<q-args>), 1,
+        \   <bang>0 ? fzf#vim#with_preview({'options': '--prompt="FERG$ " --header=""'}, 'up:50%:hidden')
+        \           : fzf#vim#with_preview({'options': '--prompt="FERG$ " --header=""'}, 'right:50%:hidden', '?'),
+        \   <bang>0
+        \ )
+
+    let g:rg_fuzzy_command_h = '
+        \ rg --column --line-number --no-heading --ignore-case --no-ignore --hidden --follow --color "always"
+        \ '
+
+    let g:rg_fuzzy_command_t = '
+        \ -g "!{.git,node_modules,vendor,Build}/*"
+        \ '
+
+    command! -nargs=1 FEFN let g:rg_ext_fname = '-g "*.{' . '<args>' . '}"'
+
+    let g:rg_ext_fname = '
+        \ -g "*.{c,h,dec,dsc,fdf,vfr,hfv,sdl,sd,py,xml,asl,asli,tpl,bat,vim,mak,equ}"
+        \ '
+
+    command! -bang -nargs=* FFRG
+        \ call fzf#vim#grep(
+        \   g:rg_fuzzy_command_h . g:rg_ext_fname . g:rg_fuzzy_command_t . shellescape(<q-args>), 1,
+        \   <bang>0 ? fzf#vim#with_preview({'options': '--prompt="FFRG$ " --header=""'}, 'up:50%:hidden')
+        \           : fzf#vim#with_preview({'options': '--prompt="FFRG$ " --header=""'}, 'right:50%:hidden', '?'),
+        \   <bang>0
+        \ )
+
 "  }
 
 
 " --- ctrlsf {
 
+    let g:ctrlsf_debug_mode       = 0
     let g:ctrlsf_search_mode      = 'async'
     let g:ctrlsf_ackprg           = 'rg'
     let g:ctrlsf_winsize          = '40%'
     let g:ctrlsf_position         = 'right'
-    let g:ctrlsf_debug_mode       = 0
     let g:ctrlsf_selected_line_hl = 'op'
 
     let g:ctrlsf_extra_backend_args = {

@@ -103,39 +103,25 @@
     "     \ "header"  : ["fg", "WildMenu"]
     " \ }
 
-    let g:rg_exact_command = '
-        \ rg --column --line-number --no-heading --fixed-strings --ignore-case --no-ignore --hidden --follow --color "always" --ansi
-        \ -g "*.{c,h,dec,dsc,fdf,vfr,hfv,sdl,sd,py,xml,asl,asli,tpl,bat,vim}"
-        \ -g "!{.git,node_modules,vendor,Build}/*"
-        \ '
-
-    command! -bang -nargs=* FERG
-        \ call fzf#vim#grep(
-        \   g:rg_exact_command . shellescape(<q-args>), 1,
-        \   <bang>0 ? fzf#vim#with_preview({'options': '--prompt="FERG$ " --header=""'}, 'up:50%:hidden')
-        \           : fzf#vim#with_preview({'options': '--prompt="FERG$ " --header=""'}, 'right:50%:hidden', '?'),
-        \   <bang>0
-        \ )
-
     let g:rg_fuzzy_command_h = '
-        \ rg --column --line-number --no-heading --ignore-case --no-ignore --hidden --follow --color "always"
+        \ rg --line-number --no-heading --ignore-case --no-ignore --hidden --follow --color "always"
         \ '
 
     let g:rg_fuzzy_command_t = '
         \ -g "!{.git,node_modules,vendor,Build}/*"
         \ '
 
-    command! -nargs=1 FEFN let g:rg_ext_fname = '-g "*.{' . '<args>' . '}"'
+    command! -nargs=1 XFN let g:rg_ext_fname = '-g "*.{' . '<args>' . '}"'
 
     let g:rg_ext_fname = '
         \ -g "*.{c,h,dec,dsc,fdf,vfr,hfv,sdl,sd,py,xml,asl,asli,tpl,bat,vim,mak,equ}"
         \ '
 
-    command! -bang -nargs=* FFRG
+    command! -bang -nargs=* FRG
         \ call fzf#vim#grep(
         \   g:rg_fuzzy_command_h . g:rg_ext_fname . g:rg_fuzzy_command_t . shellescape(<q-args>), 1,
-        \   <bang>0 ? fzf#vim#with_preview({'options': '--prompt="FFRG$ " --header=""'}, 'up:50%:hidden')
-        \           : fzf#vim#with_preview({'options': '--prompt="FFRG$ " --header=""'}, 'right:50%:hidden', '?'),
+        \   <bang>0 ? fzf#vim#with_preview({'options': '--prompt="FRG$ " --header=""'}, 'up:50%:hidden')
+        \           : fzf#vim#with_preview({'options': '--prompt="FRG$ " --header=""'}, 'right:50%:hidden', '?'),
         \   <bang>0
         \ )
 

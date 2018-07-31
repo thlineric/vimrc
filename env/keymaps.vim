@@ -408,6 +408,7 @@
             map <leader>lf :Leaderf function --right --stayOpen<cr>
             map <leader>sh :Leaderf searchHistory --bottom<cr>
             map <leader>ls :Leaderf self --bottom --stayOpen<cr>
+            map <leader>ll :LeaderfLine <cr>
 
         " }
 
@@ -454,7 +455,7 @@
 
             " Advanced customization using autoload functions
             "inoremap <expr> <c-x><c-k> fzf#vim#complete#word({'left': '15%'})
-
+            noremap <leader>ff :FRG <c-r><c-w><cr>
         " }
 
         " ctrlsf {

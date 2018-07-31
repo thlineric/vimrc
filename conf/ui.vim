@@ -89,10 +89,10 @@
     if get(g:, 'airline_powerline_fonts', 0)
         let g:airline_left_sep          = ''
         let g:airline_left_alt_sep      = ''
-        "let g:airline_right_sep         = ''
-        "let g:airline_right_alt_sep     = ''
-        let g:airline_right_sep         = ''
-        let g:airline_right_alt_sep     = ''
+        let g:airline_right_sep         = ''
+        let g:airline_right_alt_sep     = ''
+    "    let g:airline_right_sep         = ''
+    "    let g:airline_right_alt_sep     = ''
         let g:airline_symbols.branch    = ''
         let g:airline_symbols.readonly  = ''
         let g:airline_symbols.linenr    = ''
@@ -100,18 +100,18 @@
     endif
 
     " Use the default set of separators with a few customizations
-    "let g:airline#extensions#tabline#left_sep      = ''
-    "let g:airline#extensions#tabline#left_alt_sep  = ''
-    "let g:airline#extensions#tabline#right_sep     = ''
-    "let g:airline#extensions#tabline#right_alt_sep = ''
+    let g:airline#extensions#tabline#left_sep      = ''
+    let g:airline#extensions#tabline#left_alt_sep  = ''
+    let g:airline#extensions#tabline#right_sep     = ''
+    let g:airline#extensions#tabline#right_alt_sep = ''
     "let g:airline#extensions#tabline#left_sep      = "\ue0bc"
     "let g:airline#extensions#tabline#left_alt_sep  = "\ue0bd"
     "let g:airline#extensions#tabline#right_sep     = "\ue0be"
     "let g:airline#extensions#tabline#right_alt_sep = "\ue0bf"
     "let g:airline#extensions#tabline#left_sep      = ''
     "let g:airline#extensions#tabline#left_alt_sep  = ''
-    let g:airline#extensions#tabline#right_sep      = ''
-    let g:airline#extensions#tabline#right_alt_sep  = ''
+    "let g:airline#extensions#tabline#right_sep      = ''
+    "let g:airline#extensions#tabline#right_alt_sep  = ''
     let g:airline#extensions#tabline#buffers_label  = ''
     let g:airline#extensions#tabline#tabs_label     = ''
     let g:airline#extensions#quickfix#quickfix_text = 'Quickfix'

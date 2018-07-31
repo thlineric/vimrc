@@ -104,7 +104,7 @@
     " \ }
 
     let g:rg_fuzzy_command_h = '
-        \ rg --line-number --no-heading --ignore-case --no-ignore --hidden --follow --color "always"
+        \ rg --column --line-number --no-heading --ignore-case --no-ignore --hidden --follow --color "always"
         \ '
 
     let g:rg_fuzzy_command_t = '
@@ -124,8 +124,6 @@
         \           : fzf#vim#with_preview({'options': '--prompt="FRG$ " --header=""'}, 'right:50%:hidden', '?'),
         \   <bang>0
         \ )
-
-"  }
 
 
 " --- ctrlsf {

@@ -486,6 +486,13 @@
 
         " }
 
+        " incsearch {
+
+            map <leader>/ <Plug>(incsearch-fuzzy-/)
+            map <leader>? <Plug>(incsearch-fuzzy-?)
+            map <leader>g/ <Plug>(incsearch-fuzzy-stay)
+
+        " }
     endif
 " }
 

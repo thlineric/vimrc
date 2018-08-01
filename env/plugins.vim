@@ -150,6 +150,9 @@
             " global contents search
             Plug 'dyng/ctrlsf.vim'
             "Plug 'wsdjeg/FlyGrep.vim'
+            Plug 'haya14busa/incsearch.vim'
+            Plug 'haya14busa/incsearch-fuzzy.vim'
+            Plug 'haya14busa/incsearch-easymotion.vim'
         endif
 
 

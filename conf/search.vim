@@ -61,7 +61,7 @@
     "highlight Lf_hl_match gui=bold guifg=Blue cterm=bold ctermfg=21
     "highlight Lf_hl_matchRefine  gui=bold guifg=Magenta cterm=bold ctermfg=201
 
-"  }
+" }
 
 
 " --- LeaderF-tjump {
@@ -125,6 +125,8 @@
         \   <bang>0
         \ )
 
+" }
+
 
 " --- ctrlsf {
 
@@ -140,11 +142,18 @@
         \ 'rg': '--pretty',
     \ }
 
-"  }
+" }
 
 
 " --- FlyGrep {
 "
 "    let g:FlyGrep_search_tools = ['rg']
 "
-"  }
+" }
+
+
+" --- incsearch {
+
+    "let g:incsearch#auto_nohlsearch = 1
+
+" }

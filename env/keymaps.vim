@@ -301,10 +301,15 @@
 
         " }
 
-
         " choosewin {
 
             nmap <silent><leader>w <Plug>(choosewin)
+
+        " }
+
+        " vinarise {
+
+            nmap <leader>hx :Vinarise<cr>
 
         " }
     endif

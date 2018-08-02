@@ -66,6 +66,7 @@
             Plug 'chrisbra/vim-diff-enhanced'
 
             Plug 't9md/vim-choosewin'
+            Plug 'Shougo/vinarise.vim'
         endif
 
 

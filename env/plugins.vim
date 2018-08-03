@@ -70,6 +70,7 @@
             Plug 'Shougo/vinarise.vim'
 
             Plug 'machakann/vim-highlightedyank'
+            Plug 'yuttie/comfortable-motion.vim'
         endif
 
 

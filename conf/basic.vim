@@ -228,3 +228,16 @@
 
 " }
 
+
+" --- highlighttedyank {
+
+    if !exists('##TextYankPost')
+      map y <Plug>(highlightedyank)
+    endif
+
+    let g:highlightedyank_highlight_duration = 500
+
+    "hi HighlightedyankRegion cterm=reverse gui=reverse
+    hi HighlightedyankRegion ctermfg=232 ctermbg=208 guifg=#111111 guibg=#ff7700
+" }
+

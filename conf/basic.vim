@@ -245,8 +245,6 @@
 " --- comfortable-motion {
 
     let g:comfortable_motion_no_default_key_mappings = 1
-
-    " let g:comfortable_motion_no_default_key_mappings = 1
-    " let g:comfortable_motion_impulse_multiplier = 1  " Feel free to increase/decrease this value.
+    let g:comfortable_motion_impulse_multiplier      = 1  " Feel free to increase/decrease this value.
 
 " }

@@ -1,6 +1,6 @@
 " =====================================================================
 "
-"  init-plugins.vim - install and setting vim plugins
+"  plugins.vim - install and setting vim plugins
 "
 " =====================================================================
 "  EDIT HISTORY

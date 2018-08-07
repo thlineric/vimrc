@@ -56,7 +56,7 @@
     \ }
 
     let g:Lf_StlColorscheme = 'powerline'
-    let g:Lf_StlSeparator = {'left':'', 'right':''}
+    let g:Lf_StlSeparator = {'left':'', 'right':''}
 
     "highlight Lf_hl_match gui=bold guifg=Blue cterm=bold ctermfg=21
     "highlight Lf_hl_matchRefine  gui=bold guifg=Magenta cterm=bold ctermfg=201

@@ -15,34 +15,62 @@
 
 " --- space-vim-dark {
 
-    colorscheme space-vim-dark
+    " colorscheme space-vim-dark
+    "
+    " " prefer the grey comment:
+    " "highlight Comment gui=NONE term =NONE cterm=NONE guifg=#5C6370 ctermfg=70
+    " highlight Comment gui=NONE term =NONE cterm=NONE guifg=#5b5b5b ctermfg=70
+    "
+    " " remove the white background of sign column
+    " highlight! SignColumn guibg=NONE ctermbg=NONE
+    "
+    " " modify line number to grey
+    " highlight LineNr term=bold cterm=NONE ctermfg=DarkGrey ctermbg=NONE gui=NONE guifg=DarkGrey guibg=NONE
+    "
+    " " Range:   233 (darkest) ~ 238 (lightest)
+    " " Default: 235
+    " let g:space_vim_dark_background = 234
+    "
+    " highlight Pmenu ctermfg=141 ctermbg=236 guifg=#202020 guibg=#95f7cc
+    " highlight PmenuSel ctermfg=251 ctermbg=97 guifg=#95f7cc guibg=#202020 gui=bold
+    " highlight PmenuSbar ctermfg=28 ctermbg=233 guifg=#c269fe guibg=#2bff99
+    " highlight PmenuThumb ctermfg=160 ctermbg=97 guifg=#e0211d guibg=#019955
+    "
+    " if WINDOWS()
+    "     highlight Normal guibg=#070707
+    " else
+    "     highlight Normal guibg=NONE
+    " endif
+    "
+    " highlight Search term=reverse cterm=bold ctermfg=16 ctermbg=76 gui=bold guifg=#292b2e guibg=#f2fc5c
 
-    " prefer the grey comment:
-    "highlight Comment gui=NONE term =NONE cterm=NONE guifg=#5C6370 ctermfg=70
-    highlight Comment gui=NONE term =NONE cterm=NONE guifg=#5b5b5b ctermfg=70
+" }
 
-    " remove the white background of sign column
-    highlight! SignColumn guibg=NONE ctermbg=NONE
 
-    " modify line number to grey
-    highlight LineNr term=bold cterm=NONE ctermfg=DarkGrey ctermbg=NONE gui=NONE guifg=DarkGrey guibg=NONE
+" --- PaperColor {
 
-    " Range:   233 (darkest) ~ 238 (lightest)
-    " Default: 235
-    let g:space_vim_dark_background = 234
+    colorscheme PaperColor
+
+    if WINDOWS()
+        highlight Normal guibg=#070707
+        highlight NonText term=bold ctermfg=9 guifg=#585858 guibg=#070707
+    else
+        highlight Normal guibg=NONE
+    endif
+
+    highlight string guifg=seagreen
+    highlight function guifg=#d7af5f
+    highlight LineNr term=underline ctermfg=14 guifg=#777777 guibg=#1c1c1c
+    highlight CursorLineNr term=bold ctermfg=14 guifg=#ffffff guibg=#1c1c1c gui=bold
+
+    highlight Search term=reverse cterm=bold ctermfg=16 ctermbg=76 gui=NONE guifg=#292b2e guibg=#f2fc5c
+    "highlight cDelimiter guifg=#fff266
+    highlight MatchParen term=reverse ctermbg=3 guifg=green guibg=#070707 gui=bold
 
     highlight Pmenu ctermfg=141 ctermbg=236 guifg=#202020 guibg=#95f7cc
     highlight PmenuSel ctermfg=251 ctermbg=97 guifg=#95f7cc guibg=#202020 gui=bold
     highlight PmenuSbar ctermfg=28 ctermbg=233 guifg=#c269fe guibg=#2bff99
     highlight PmenuThumb ctermfg=160 ctermbg=97 guifg=#e0211d guibg=#019955
-
-    if WINDOWS()
-        highlight Normal guibg=#070707
-    else
-        highlight Normal guibg=NONE
-    endif
-
-    highlight Search term=reverse cterm=bold ctermfg=16 ctermbg=76 gui=bold guifg=#292b2e guibg=#f2fc5c
 
 " }
 

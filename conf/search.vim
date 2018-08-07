@@ -114,7 +114,7 @@
     command! -nargs=1 XFN let g:rg_ext_fname = '-g "*.{' . '<args>' . '}"'
 
     let g:rg_ext_fname = '
-        \ -g "*.{c,h,dec,dsc,fdf,vfr,hfv,sdl,sd,py,xml,asl,asli,tpl,bat,vim,mak,equ}"
+        \ -g "*.{c,h,s,S,asm,dec,dsc,fdf,vfr,hfv,sdl,sd,py,xml,asl,asli,tpl,bat,sh,vim,mak,equ}"
         \ '
 
     command! -bang -nargs=* FRG

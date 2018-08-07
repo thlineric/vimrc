@@ -289,7 +289,7 @@
 
         " buffergator {
 
-            nnoremap <silent><leader>bt :BuffergatorToggle<CR>
+            nnoremap <silent><leader>bf :BuffergatorToggle<CR>
             "nnoremap <silent><Leader>bo :BuffergatorOpen<CR>
             "nnoremap <silent><Leader>bc :BuffergatorClose<CR>
 
@@ -397,7 +397,7 @@
 
         " ListToggle {
 
-            let g:lt_location_list_toggle_map = '<leader>lo'
+            let g:lt_location_list_toggle_map = '<leader>lc'
             let g:lt_quickfix_list_toggle_map = '<leader>qf'
 
         " }
@@ -438,7 +438,7 @@
 
         " LeaderF-tjump {
 
-            noremap <leader>lj :LeaderfTjump <c-r><c-w><cr>
+            " noremap <leader>lj :LeaderfTjump <c-r><c-w><cr>
 
         " }
 

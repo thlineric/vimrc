@@ -141,7 +141,7 @@
         if has_key(g:bundle_group, 'search') && g:bundle_group['search']
             " file search
             Plug 'Yggdroot/LeaderF'
-            Plug 'xltan/LeaderF-tjump'
+            "Plug 'xltan/LeaderF-tjump'
             Plug 'bstaint/LeaderF-grep'
 
             if WINDOWS()
@@ -200,7 +200,8 @@
         if has_key(g:bundle_group, 'ui') && g:bundle_group['ui']
             "Plug 'altercation/vim-colors-solarized'
             "Plug 'junegunn/seoul256.vim'
-            Plug 'liuchengxu/space-vim-dark'
+            "Plug 'liuchengxu/space-vim-dark'
+            Plug 'NLKNguyen/papercolor-theme'
 
             " lean & mean status/tabline for vim that's light as air
             Plug 'vim-airline/vim-airline'

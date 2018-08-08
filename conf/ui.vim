@@ -54,14 +54,18 @@
     if WINDOWS()
         highlight Normal guibg=#070707
         highlight NonText term=bold ctermfg=9 guifg=#585858 guibg=#070707
+        highlight LineNr term=underline ctermfg=14 guifg=#777777 guibg=#1c1c1c
+        highlight CursorLineNr term=bold ctermfg=14 guifg=#ffffff guibg=#1c1c1c gui=bold
     else
         highlight Normal guibg=NONE
+        highlight NonText term=bold ctermfg=9 guifg=#585858 guibg=NONE
+        highlight LineNr term=underline ctermfg=14 guifg=#777777 guibg=NONE
+        highlight CursorLineNr term=bold ctermfg=14 guifg=#ffffff guibg=NONE gui=bold
+        highlight SignColumn term=standout ctermfg=14 ctermbg=242 guifg=#d7af00 guibg=NONE
     endif
 
     highlight string guifg=seagreen
     highlight function guifg=#d7af5f
-    highlight LineNr term=underline ctermfg=14 guifg=#777777 guibg=#1c1c1c
-    highlight CursorLineNr term=bold ctermfg=14 guifg=#ffffff guibg=#1c1c1c gui=bold
 
     highlight Search term=reverse cterm=bold ctermfg=16 ctermbg=76 gui=NONE guifg=#292b2e guibg=#f2fc5c
     "highlight cDelimiter guifg=#fff266

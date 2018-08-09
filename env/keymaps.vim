@@ -20,6 +20,14 @@
     " reload vimrc
     "map <leader>sv :so $myvimrc<cr>
 
+    " auto select the block after indented the block
+    vnoremap < <gv
+    vnoremap > >gv
+
+    " use the regex when search string in the file
+    nnoremap / /\v
+    vnoremap / /\v
+
     " clear search highligh
     noremap <silent><f2> :noh<cr>
 

@@ -51,8 +51,12 @@
             Plug 'junegunn/vim-easy-align'
 
             " file explorer
-            Plug 'justinmk/vim-dirvish'
             "Plug 'scrooloose/nerdtree'
+            if WINDOWS()
+                Plug 'justinmk/vim-dirvish'
+            else
+                Plug 'francoiscabrol/ranger.vim'
+            endif
 
             " code marks（ma-mz to record address）
             Plug 'kshenoy/vim-signature'

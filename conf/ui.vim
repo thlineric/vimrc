@@ -52,11 +52,21 @@
     colorscheme PaperColor
 
     if WINDOWS()
-        highlight Normal guibg=#070707
-        highlight NonText term=bold ctermfg=9 guifg=#585858 guibg=#070707
-        highlight LineNr term=underline ctermfg=14 guifg=#777777 guibg=#1c1c1c
-        highlight CursorLineNr term=bold ctermfg=14 guifg=#ffffff guibg=#1c1c1c
-        highlight SignColumn term=standout ctermfg=14 ctermbg=242 guifg=#d7af00 guibg=#1c1c1c
+
+        " black backgrund color
+        " highlight Normal guibg=#070707
+        " highlight NonText term=bold ctermfg=9 guifg=#585858 guibg=#070707
+        " highlight LineNr term=underline ctermfg=14 guifg=#777777 guibg=#1c1c1c
+        " highlight CursorLineNr term=bold ctermfg=14 guifg=#ffffff guibg=#1c1c1c
+        " highlight SignColumn term=standout ctermfg=14 ctermbg=242 guifg=#d7af00 guibg=#1c1c1c
+
+        " Solarized background color
+        highlight Normal guibg=#073642
+        highlight NonText term=bold ctermfg=9 guifg=#585858 guibg=#073642
+        highlight LineNr term=underline ctermfg=14 guifg=#777777 guibg=#073642
+        highlight CursorLineNr term=bold ctermfg=14 guifg=#ffffff guibg=#073642
+        highlight SignColumn term=standout ctermfg=14 ctermbg=242 guifg=#d7af00 guibg=#073642
+
     else
         highlight Normal guibg=NONE
         highlight NonText term=bold ctermfg=9 guifg=#585858 guibg=NONE

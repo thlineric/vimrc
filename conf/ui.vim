@@ -55,12 +55,13 @@
         highlight Normal guibg=#070707
         highlight NonText term=bold ctermfg=9 guifg=#585858 guibg=#070707
         highlight LineNr term=underline ctermfg=14 guifg=#777777 guibg=#1c1c1c
-        highlight CursorLineNr term=bold ctermfg=14 guifg=#ffffff guibg=#1c1c1c gui=bold
+        highlight CursorLineNr term=bold ctermfg=14 guifg=#ffffff guibg=#1c1c1c
+        highlight SignColumn term=standout ctermfg=14 ctermbg=242 guifg=#d7af00 guibg=#1c1c1c
     else
         highlight Normal guibg=NONE
         highlight NonText term=bold ctermfg=9 guifg=#585858 guibg=NONE
         highlight LineNr term=underline ctermfg=14 guifg=#777777 guibg=NONE
-        highlight CursorLineNr term=bold ctermfg=14 guifg=#ffffff guibg=NONE gui=bold
+        highlight CursorLineNr term=bold ctermfg=14 guifg=#ffffff guibg=NONE
         highlight SignColumn term=standout ctermfg=14 ctermbg=242 guifg=#d7af00 guibg=NONE
     endif
 
@@ -75,6 +76,8 @@
     highlight PmenuSel ctermfg=251 ctermbg=97 guifg=#95f7cc guibg=#202020 gui=bold
     highlight PmenuSbar ctermfg=28 ctermbg=233 guifg=#c269fe guibg=#2bff99
     highlight PmenuThumb ctermfg=160 ctermbg=97 guifg=#e0211d guibg=#019955
+
+    highlight! link VertSplit LineNr
 
 " }
 

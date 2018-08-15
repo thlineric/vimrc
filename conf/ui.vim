@@ -61,11 +61,12 @@
         " highlight SignColumn term=standout ctermfg=14 ctermbg=242 guifg=#d7af00 guibg=#1c1c1c
 
         " Solarized background color
-        highlight Normal guibg=#073642
-        highlight NonText term=bold ctermfg=9 guifg=#585858 guibg=#073642
-        highlight LineNr term=underline ctermfg=14 guifg=#777777 guibg=#073642
-        highlight CursorLineNr term=bold ctermfg=14 guifg=#ffffff guibg=#073642
-        highlight SignColumn term=standout ctermfg=14 ctermbg=242 guifg=#d7af00 guibg=#073642
+        " highlight Normal guibg=#073642
+        highlight Normal guibg=#011E25
+        highlight NonText term=bold ctermfg=9 guifg=#585858 guibg=#011E25
+        highlight LineNr term=underline ctermfg=14 guifg=#777777 guibg=#011E25
+        highlight CursorLineNr term=bold ctermfg=14 guifg=#ffffff guibg=#011E25
+        highlight SignColumn term=standout ctermfg=14 ctermbg=242 guifg=#d7af00 guibg=#011E25
 
     else
         highlight Normal guibg=NONE
@@ -75,6 +76,8 @@
         highlight SignColumn term=standout ctermfg=14 ctermbg=242 guifg=#d7af00 guibg=NONE
     endif
 
+
+    highlight CursorLine guibg=#073642
     highlight string guifg=seagreen
     highlight function guifg=#d7af5f
 

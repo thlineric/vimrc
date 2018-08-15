@@ -24,6 +24,10 @@
     vnoremap < <gv
     vnoremap > >gv
 
+    " move the visual block
+    vnoremap K :m '<-2<cr>gv=gv
+    vnoremap J :m '>+1<cr>gv=gv
+
     " use the regex when search string in the file
     nnoremap / /\v
     vnoremap / /\v

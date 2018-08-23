@@ -257,13 +257,22 @@
 
         " }
 
-        " dirvish {
+        if WINDOWS()
+            " dirvish {
 
-            map <leader>t  :Dirvish<cr>
-            map <leader>ht <plug>(dirvish_split_up)<cr>
-            map <leader>vt <plug>(dirvish_vsplit_up)<cr>
+                map <leader>t  :Dirvish<cr>
+                map <leader>ht <plug>(dirvish_split_up)<cr>
+                map <leader>vt <plug>(dirvish_vsplit_up)<cr>
 
-        " }
+            " }
+        else
+            " ranger {
+
+                map <leader>t  :Ranger<cr>
+                nmap - :RangerCurrentDirectory<cr>
+
+            " }
+        endif
 
         " signature {
 

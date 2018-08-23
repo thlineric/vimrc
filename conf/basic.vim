@@ -85,6 +85,7 @@
 " }
 
 
+if WINDOWS()
 " --- dirvish {
 
     function! s:setup_dirvish()
@@ -112,6 +113,14 @@
         autocmd!
         autocmd FileType dirvish call s:setup_dirvish()
     augroup END
+
+" }
+endif
+
+
+" --- ranger {
+
+    " none
 
 " }
 

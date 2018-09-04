@@ -16,6 +16,7 @@
 " --- surround {
 
     " TBD
+    let g:surround_45 = "\//AMI_OVERRIDE_START-".strftime("%F")." >>> \r \//AMI_OVERRIDE_END-".strftime("%F")." <<<"
 
 " }
 

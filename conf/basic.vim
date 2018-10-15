@@ -42,6 +42,21 @@
         \ 's' : "\"\r\" + \\",
         \ }
 
+    let g:surround_key_mapping.asm = {
+        \ 'c' : "#AMI_OVERRIDE_START-".strftime("%Y%m%d")." >>> \r #AMI_OVERRIDE_END-".strftime("%Y%m%d")." <<<",
+        \ ';' : ";AMI_OVERRIDE_START-".strftime("%Y%m%d")." >>> \r ;AMI_OVERRIDE_END-".strftime("%Y%m%d")." <<<",
+        \ }
+
+    let g:surround_key_mapping.python = {
+        \ 'c' : "#AMI_OVERRIDE_START-".strftime("%Y%m%d")." >>> \r #AMI_OVERRIDE_END-".strftime("%Y%m%d")." <<<",
+        \ 's' : "\"\r\" + \\",
+        \ }
+
+    let g:surround_key_mapping.perl = {
+        \ 'c' : "#AMI_OVERRIDE_START-".strftime("%Y%m%d")." >>> \r #AMI_OVERRIDE_END-".strftime("%Y%m%d")." <<<",
+        \ 's' : "\"\r\" + \\",
+        \ }
+
     function! s:surround_key_setting()
         let map_type = &filetype
 
@@ -50,7 +65,7 @@
         endif
 
         for [key,action] in items(g:surround_key_mapping[map_type])
-            let command = "let " . "b:surround_" . char2nr(key) . " = " .string(action)
+            let command = "let " . "b:surround_" . char2nr(key) . " = " . string(action)
             execute command
         endfor
     endfunc

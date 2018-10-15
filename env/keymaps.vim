@@ -250,7 +250,7 @@
         " easy-align {
 
             " start interactive easyalign in visual mode (e.g. <leader>vipal)
-            xmap <leader>al <plug>(easyalign)
+            xmap <leader>al <plug>(EasyAlign)
 
             " start interactive EasyAlign for a motion/text object (e.g. <leader>alip)
             nmap <leader>al <Plug>(EasyAlign)

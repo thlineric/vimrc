@@ -75,6 +75,8 @@
 
             Plug 'machakann/vim-highlightedyank'
             Plug 'yuttie/comfortable-motion.vim'
+            " Plug 'chrisbra/NrrwRgn'
+            Plug 'rhysd/clever-f.vim'
         endif
 
 
@@ -129,6 +131,8 @@
 
             " provide GscopeFind command for search gtags
             Plug 'skywind3000/gutentags_plus'
+
+            Plug 'vim-perl/vim-perl', { 'for': 'perl', 'do': 'make clean carp dancer highlight-all-pragmas moose test-more try-tiny' }
         endif
 
 

@@ -15,8 +15,50 @@
 
 " --- surround {
 
-    " TBD
-    let g:surround_45 = "\//AMI_OVERRIDE_START-".strftime("%Y%m%d")." >>> \r \//AMI_OVERRIDE_END-".strftime("%Y%m%d")." <<<"
+    let g:surround_key_mapping = {}
+    let g:surround_key_mapping.uefi = {
+        \ 'c' : "#AMI_OVERRIDE_START-".strftime("%Y%m%d")." >>> \r #AMI_OVERRIDE_END-".strftime("%Y%m%d")." <<<",
+        \ }
+
+    let g:surround_key_mapping.inform = {
+        \ 'c' : "#AMI_OVERRIDE_START-".strftime("%Y%m%d")." >>> \r #AMI_OVERRIDE_END-".strftime("%Y%m%d")." <<<",
+        \ }
+
+    let g:surround_key_mapping.asl = {
+        \ 'c' : "\//AMI_OVERRIDE_START-".strftime("%Y%m%d")." >>> \r \//AMI_OVERRIDE_END-".strftime("%Y%m%d")." <<<",
+        \ }
+
+    let g:surround_key_mapping.sdl = {
+        \ 'c' : "#AMI_OVERRIDE_START-".strftime("%Y%m%d")." >>> \r #AMI_OVERRIDE_END-".strftime("%Y%m%d")." <<<",
+        \ }
+
+    let g:surround_key_mapping.c = {
+        \ 'c' : "\//AMI_OVERRIDE_START-".strftime("%Y%m%d")." >>> \r \//AMI_OVERRIDE_END-".strftime("%Y%m%d")." <<<",
+        \ 's' : "\"\r\" + \\",
+        \ }
+
+    let g:surround_key_mapping.cpp = {
+        \ 'c' : "\//AMI_OVERRIDE_START-".strftime("%Y%m%d")." >>> \r \//AMI_OVERRIDE_END-".strftime("%Y%m%d")." <<<",
+        \ 's' : "\"\r\" + \\",
+        \ }
+
+    function! s:surround_key_setting()
+        let map_type = &filetype
+
+        if !has_key(g:surround_key_mapping, map_type)
+            return
+        endif
+
+        for [key,action] in items(g:surround_key_mapping[map_type])
+            let command = "let " . "b:surround_" . char2nr(key) . " = " .string(action)
+            execute command
+        endfor
+    endfunc
+
+    augroup Surround
+        autocmd!
+        autocmd FileType * call s:surround_key_setting()
+    augroup END
 
 " }
 
@@ -256,5 +298,16 @@ endif
 
     let g:comfortable_motion_no_default_key_mappings = 1
     let g:comfortable_motion_impulse_multiplier      = 1  " Feel free to increase/decrease this value.
+
+" }
+
+
+" --- clever-f {
+
+    let g:clever_f_across_no_line = 1
+    let g:clever_f_ignore_case = 1
+    let g:clever_f_smart_case = 1
+    "let g:clever_f_fix_key_direction = 1
+    "let g:clever_f_chars_match_any_signs = 1
 
 " }

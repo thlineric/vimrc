@@ -16,7 +16,8 @@
 " --- tcomment {
 
     let g:tcomment#commentstring_c = '// %s'
-
+    call tcomment#type#Define('inform', '# %s')
+    call tcomment#type#Define('uefi', '# %s')
 " }
 
 

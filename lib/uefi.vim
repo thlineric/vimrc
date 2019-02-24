@@ -33,18 +33,12 @@ endif
 " augroup end
 
 function! uefi#dsc_open_inf()
-    " let path = split(getline('.'), '|')
     let line = getline('.')
-    let path = substitute(line, '^\s*\(.\{-}\)[\s{]*$', '\1', '')
+    " let path = substitute(line, '^\s*\(.\{-}\)[\s{]*$', '\1', '')
+    let path = substitute(line, '^\s*\(\w*|\)*\(.\{-}\)[\s{]*$', '\2', '')
     " echo path
     if filereadable(path)
         exec 'edit'.' '.path
-    else
-        " get library path
-        let path = substitute(line, '^\s*\w*|*\(.\{-}\)[\s{]*$', '\1', '')
-        if filereadable(path)
-            exec 'edit'.' '.path
-        endif
     endif
 endfunc
 

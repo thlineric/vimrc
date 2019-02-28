@@ -143,6 +143,25 @@
         \ 'rg': '--pretty',
     \ }
 
+    function! g:RgOptions(args)
+        let g:rg_ctrlsf_command_h = '--vimgrep --type-add "fexts:*.{'
+        let g:rg_ctrlsf_command_t = '}" -tfexts'
+        if a:args == 'all'
+            let g:rg_cmd_package = '--pretty'
+        else
+            let g:extension_file = a:args
+            let g:rg_cmd_package =  g:rg_ctrlsf_command_h . g:extension_file . g:rg_ctrlsf_command_t
+        endif
+
+        " override rg command to ctrlsf
+        if has_key(g:ctrlsf_extra_backend_args, 'rg')
+            let g:ctrlsf_extra_backend_args['rg'] = g:rg_cmd_package
+        endif
+
+        echo g:ctrlsf_extra_backend_args['rg']
+    endfunc
+    command! -nargs=1 RGOPTS call g:RgOptions('<args>')
+
 " }
 
 
